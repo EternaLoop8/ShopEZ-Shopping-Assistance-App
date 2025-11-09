@@ -1,0 +1,260 @@
+import React from "react";
+
+const CategoryCard = ({ title, products, linkText }) => {
+  return (
+    <div className="bg-white p-3 sm:p-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 w-full">
+      {/* Title */}
+      <h2 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">{title}</h2>
+
+      {/* 2x2 Product Grid */}
+      <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-2 sm:mb-3">
+        {products.map((item, idx) => (
+          <div key={idx} className="flex flex-col items-center text-center">
+            <img
+              src={item.image}
+              alt={item.label}
+              className="w-full h-20 sm:h-24 object-cover rounded"
+            />
+            <p className="text-[10px] sm:text-xs mt-1 text-gray-700">{item.label}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Link */}
+      <p className="text-xs sm:text-sm text-blue-600 hover:underline cursor-pointer">
+        {linkText}
+      </p>
+    </div>
+  );
+};
+
+export default function HomePage() {
+  const categories = [
+    {
+      title: "Revamp your home in style",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cushion.jpg",
+          label: "Cushion covers & more",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/vases.jpg",
+          label: "Figurines & vases",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/storage.jpg",
+          label: "Home storage",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/lighting.jpg",
+          label: "Lighting",
+        },
+      ],
+    },
+    {
+      title: "Starting ₹149 | Headphones",
+      linkText: "See all offers",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Audio/Boat/Boat.jpg",
+          label: "Starting ₹249 | boAt",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Audio/Boult/boult.jpg",
+          label: "Starting ₹349 | Boult",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Audio/Noise/noise.jpg",
+          label: "Starting ₹649 | Noise",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/img23/Audio/Zebronics/zebronics.jpg",
+          label: "Starting ₹149 | Zebronics",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    
+  ];
+
+  return (
+    <div className="relative bg-[#f8f6f2]">
+
+      {/* ===== Product Cards Overlapping Banner ===== */}
+      <div className="relative z-10 -mt-20 sm:-mt-32 lg:-mt-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6">
+          {categories.map((cat, idx) => (
+            <CategoryCard key={idx} {...cat} />
+          ))}
+        </div>
+      </div>
+
+      {/* Add padding for page scroll */}
+      <div className="h-40 sm:h-60 lg:h-80" />
+    </div>
+  );
+}
