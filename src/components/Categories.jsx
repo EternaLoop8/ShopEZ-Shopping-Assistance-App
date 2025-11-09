@@ -2,7 +2,7 @@ import React from "react";
 
 const Categories = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-200 shadow-md m-0 p-0 relative z-10">
+    <div className="w-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-200 shadow-md m-0 p-0 h-8 justify-text-center relative z-10">
       <div className="flex items-center justify-start gap-6 px-6 py-2 text-sm md:text-base font-semibold text-gray-800 whitespace-nowrap">
 
         {/* Hamburger + Label */}

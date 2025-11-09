@@ -2,26 +2,28 @@ import React from "react";
 
 const CategoryCard = ({ title, products, linkText }) => {
   return (
-    <div className="bg-white p-3 sm:p-4 rounded-md shadow-md hover:shadow-lg transition-all duration-300 w-full">
+    <div className="bg-white p-4 sm:p-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 w-full h-full">
       {/* Title */}
-      <h2 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3">{title}</h2>
+      <h2 className="text-base sm:text-lg font-semibold mb-3">{title}</h2>
 
       {/* 2x2 Product Grid */}
-      <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-2 sm:mb-3">
+      <div className="grid grid-cols-2 gap-3 mb-3">
         {products.map((item, idx) => (
           <div key={idx} className="flex flex-col items-center text-center">
             <img
               src={item.image}
               alt={item.label}
-              className="w-full h-20 sm:h-24 object-cover rounded"
+              className="w-full h-28 sm:h-32 object-cover rounded-md"
             />
-            <p className="text-[10px] sm:text-xs mt-1 text-gray-700">{item.label}</p>
+            <p className="text-[11px] sm:text-sm mt-1 text-gray-700">
+              {item.label}
+            </p>
           </div>
         ))}
       </div>
 
       {/* Link */}
-      <p className="text-xs sm:text-sm text-blue-600 hover:underline cursor-pointer">
+      <p className="text-sm text-blue-600 hover:underline cursor-pointer">
         {linkText}
       </p>
     </div>
@@ -108,144 +110,12 @@ export default function HomePage() {
         },
       ],
     },
-    {
-      title: "Under ₹499 | Deals on home improvement",
-      linkText: "Explore all",
-      products: [
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
-          label: "Cleaning supplies",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
-          label: "Bathroom accessories",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
-          label: "Home tools",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
-          label: "Wallpapers",
-        },
-      ],
-    },
-    {
-      title: "Under ₹499 | Deals on home improvement",
-      linkText: "Explore all",
-      products: [
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
-          label: "Cleaning supplies",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
-          label: "Bathroom accessories",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
-          label: "Home tools",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
-          label: "Wallpapers",
-        },
-      ],
-    },
-    {
-      title: "Under ₹499 | Deals on home improvement",
-      linkText: "Explore all",
-      products: [
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
-          label: "Cleaning supplies",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
-          label: "Bathroom accessories",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
-          label: "Home tools",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
-          label: "Wallpapers",
-        },
-      ],
-    },
-    {
-      title: "Under ₹499 | Deals on home improvement",
-      linkText: "Explore all",
-      products: [
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
-          label: "Cleaning supplies",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
-          label: "Bathroom accessories",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
-          label: "Home tools",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
-          label: "Wallpapers",
-        },
-      ],
-    },
-    {
-      title: "Under ₹499 | Deals on home improvement",
-      linkText: "Explore all",
-      products: [
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
-          label: "Cleaning supplies",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
-          label: "Bathroom accessories",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
-          label: "Home tools",
-        },
-        {
-          image:
-            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
-          label: "Wallpapers",
-        },
-      ],
-    },
-    
   ];
 
   return (
     <div className="relative bg-[#f8f6f2]">
-
       {/* ===== Product Cards Overlapping Banner ===== */}
-      <div className="relative z-10 -mt-20 sm:-mt-32 lg:-mt-40">
+      <div className="relative z-10 -mt-28 sm:-mt-36 lg:-mt-48">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6">
           {categories.map((cat, idx) => (
             <CategoryCard key={idx} {...cat} />
@@ -253,8 +123,8 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Add padding for page scroll */}
-      <div className="h-40 sm:h-60 lg:h-80" />
+      {/* Add padding for scroll */}
+      <div className="h-4 sm:h-6 lg:h-4" />
     </div>
   );
 }

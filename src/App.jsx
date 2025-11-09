@@ -9,9 +9,9 @@ import Footer from './components/Footer';
 const App = () => {
   return (
     <>
-    <div className="hidden md:block"><Navbar /></div>
+    <div className=""><Navbar /></div>
     <div><Categories /></div>
-    <main className="mt-20">
+    <main className="">
         <Hero />
         <ProductCard />
         <Testimonials />

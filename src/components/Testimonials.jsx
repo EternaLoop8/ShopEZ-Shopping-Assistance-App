@@ -119,6 +119,10 @@ const Testimonials = () => {
             <p class="font-medium text-gray-800">Ethan Roberts</p>
         </div>
     </div>
+
+    {/* Add padding for scroll */}
+      <div className="h-8 sm:h-6 lg:h-4" />
+
 </div>
   )
 }
