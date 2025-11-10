@@ -2,12 +2,12 @@ import React from "react";
 
 const CategoryCard = ({ title, products, linkText }) => {
   return (
-    <div className="bg-white p-4 sm:p-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 w-full h-full">
+    <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 w-full h-full">
       {/* Title */}
-      <h2 className="text-base sm:text-lg font-semibold mb-3">{title}</h2>
+      <h2 className="text-base sm:text-lg font-semibold mb-4">{title}</h2>
 
       {/* 2x2 Product Grid */}
-      <div className="grid grid-cols-2 gap-3 mb-3">
+      <div className="grid grid-cols-2 gap-4 mb-4">
         {products.map((item, idx) => (
           <div key={idx} className="flex flex-col items-center text-center">
             <img
@@ -15,7 +15,7 @@ const CategoryCard = ({ title, products, linkText }) => {
               alt={item.label}
               className="w-full h-28 sm:h-32 object-cover rounded-md"
             />
-            <p className="text-[11px] sm:text-sm mt-1 text-gray-700">
+            <p className="text-[11px] sm:text-sm mt-2 text-gray-700">
               {item.label}
             </p>
           </div>
@@ -114,17 +114,17 @@ export default function HomePage() {
 
   return (
     <div className="relative bg-[#f8f6f2]">
-      {/* ===== Product Cards Overlapping Banner ===== */}
+      {/* Product Cards Overlapping Banner */}
       <div className="relative z-10 -mt-28 sm:-mt-36 lg:-mt-48">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 px-6 sm:px-8 lg:px-10">
           {categories.map((cat, idx) => (
             <CategoryCard key={idx} {...cat} />
           ))}
         </div>
       </div>
 
-      {/* Add padding for scroll */}
-      <div className="h-4 sm:h-6 lg:h-4" />
+      {/* Bottom Padding */}
+      <div className="h-10" />
     </div>
   );
 }
