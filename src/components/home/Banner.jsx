@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import carousel_1 from "../assets/carousel_1.jpg";
-import carousel_2 from "../assets/carousel_2.jpg";
-import carousel_3 from "../assets/carousel_3.jpg";
-import carousel_4 from "../assets/carousel_4.jpg";
-import carousel_5 from "../assets/carousel_5.jpg";
+import carousel_1 from "../../assets/carousel_1.jpg";
+import carousel_2 from "../../assets/carousel_2.jpg";
+import carousel_3 from "../../assets/carousel_3.jpg";
+import carousel_4 from "../../assets/carousel_4.jpg";
+import carousel_5 from "../../assets/carousel_5.jpg";
 
 const Carousel = () => {
   const originalImages = [carousel_1, carousel_2, carousel_3, carousel_4, carousel_5];
