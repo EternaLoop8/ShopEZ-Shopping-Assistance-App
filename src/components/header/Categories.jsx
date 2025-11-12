@@ -1,19 +1,21 @@
 import React from "react";
 
 const Categories = () => {
-  return (
-    <div className="w-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-200 shadow-md m-0 p-0 h-8 justify-text-center relative z-10">
-      <div className="flex items-center justify-start gap-6 px-6 py-2 text-sm md:text-base font-semibold text-gray-800 whitespace-nowrap">
+  const categories = ["Bestsellers", "Top Deals", "New Releases", "Mobiles", "Electronics", "Travel", "Home & Decorations", "Sports", "Books & Novels", "Daily Needs", "Grocery"];
 
+  return (
+    <div className="w-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-200 shadow-md px-1 py-2 relative z-10">
+      <div className="flex items-center justify-start gap-6 text-sm md:text-base font-semibold text-gray-800 flex-wrap">
+        
         {/* Hamburger + Label */}
-        <div className="flex items-center gap-0 cursor-pointer hover:text-black transition-colors">
+        <div className="flex items-center gap-1 cursor-pointer hover:text-black transition-colors">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
             stroke="currentColor"
-            className="w-6 h-6"
+            className="w-5 h-5"
           >
             <path
               strokeLinecap="round"
@@ -24,24 +26,9 @@ const Categories = () => {
           <span>Categories</span>
         </div>
 
-        {/* Category List */}
-        {[
-          "Bestsellers",
-          "Top Deals",
-          "New Releases",
-          "Latest Fashion",
-          "Electronics",
-          "Daily Needs",
-          "Books & Stationary",
-          "Groceries",
-          "Home & Kitchen",
-          "Travel",
-          "Sports",
-        ].map((item, idx) => (
-          <span
-            key={idx}
-            className="cursor-pointer hover:text-black hover:underline underline-offset-2 transition-all"
-          >
+        {/* Render category names */}
+        {categories.map((item, index) => (
+          <span key={index} className="hover:text-black cursor-pointer">
             {item}
           </span>
         ))}

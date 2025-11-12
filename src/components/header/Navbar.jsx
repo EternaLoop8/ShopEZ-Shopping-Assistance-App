@@ -2,25 +2,24 @@ import React from 'react'
 
 const Navbar= () => {
   return (
-    <nav className='w-full bg-white shadow flex items-center justify-between px-10 py-2'>
-      <div className="flex justify-center items-center gap-4 px-6 py-2">
+    <nav className='w-full bg-white shadow flex items-center justify-between px-0 py-0 ps-1 h-15'>
+      <div className="flex justify-center items-center gap-4 px-6 py-">
       <div>
         <h1 className="text-xl sm:text-2xl font-bold tracking-wide">
         ShopEZ<span className="text-blue-500">.</span>
         </h1>
       </div>
 
-      <div>
-        <span className='text-gray-400'>Deliver to User</span>
-        <br />
-        <span className=''>Place,Pincode</span>
+      <div className='flex flex-col leading-tight'>
+        <span className='text-gray-500 text-xs'>Deliver to User</span>
+        <span className='font-semibold text-sm'>Place,Pincode</span>
       </div>
 
-      <div className='flex justify-center max-w-md mx-auto'>
+      <div className='relative w-full max-w-md md:w-10 lg:w-900'>
         <input 
         type="text"
         placeholder='Search fo Products'
-        className='w-full max-w-sm md:max-w-md lg:max-w-lg px-3 py-2 border-2 border-gray-300 p-2 rounded-full focus:outline-none focus:border-blue-500'
+        className='w-full border border-gray-300 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400'
          />
 
         <svg xmlns="http://www.w3.org/2000/svg" 
@@ -28,24 +27,24 @@ const Navbar= () => {
         viewBox="0 0 24 24" 
         strokeWidth={1.5} 
         stroke="currentColor" 
-        className="size-6 cursor-pointer">
+        className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5 pointer-events-none cursor-pointer ">
         <path strokeLinecap="round" 
         strokeLinejoin="round" 
         d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
         </svg>
       </div>
 
-      <div className='flex gap-4 cursor-pointer'>
-        <button className='flex cursor-pointer rounded border-2 px-4 py-2 h-10 w-20 justify-center items-center'>
+      <div className='flex gap-4 cursor-pointer absolute right-4 justify-center items-center'>
+        <button className='flex cursor-pointer rounded-full border-1 px-1 py-2 h-8 w-20 justify-center items-center gap-1'>
           <span className=''>Login</span>
 
           <svg xmlns="http://www.w3.org/2000/svg" 
           fill="none" 
           viewBox="0 0 24 24" 
           strokeWidth={1.5} 
-          stroke="currentColor" 
-          className="size-6">
-         <path strokeLinecap="round" 
+          stroke="currentcolor" 
+          className="w-5 h-5 text-gray-700">
+          <path strokeLinecap="round" 
           strokeLinejoin="round" 
           d="m19.5 8.25-7.5 7.5-7.5-7.5" />
           </svg>

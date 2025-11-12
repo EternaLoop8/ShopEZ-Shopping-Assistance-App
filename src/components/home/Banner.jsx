@@ -59,7 +59,7 @@ const Carousel = () => {
             <img
               src={img}
               alt={`Slide ${i}`}
-              className="w-full h-[4=500px] object-cover select-none"
+              className="w-full h-[600px] object-cover select-none"
               draggable="false"
             />
             {/* Ambient gradient */}
@@ -88,7 +88,7 @@ const Carousel = () => {
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-40 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute bottom-50 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {originalImages.map((_, i) => (
           <span
             key={i}
