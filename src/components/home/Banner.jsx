@@ -46,7 +46,7 @@ const Carousel = () => {
   }, [index]);
 
   return (
-    <div className="relative w-full overflow-hidden bg-[#EAEDED]">
+    <div className="relative w-full overflow-hidden bg-[#EAEDED] sm:object-cover h-100 md:w-full h-full">
       {/* Slides */}
       <div
         className={`flex ${transition ? "transition-transform duration-700 ease-in-out" : ""}`}
@@ -88,7 +88,7 @@ const Carousel = () => {
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-50 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+      <div className="absolute left-1/2 -translate-x-1/2 flex gap-2 z-20 sm:bottom-38 md:bottom-50">
         {originalImages.map((_, i) => (
           <span
             key={i}

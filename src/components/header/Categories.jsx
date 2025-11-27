@@ -5,7 +5,7 @@ const Categories = () => {
 
   return (
     <div className="w-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-200 shadow-md px-1 py-2 relative z-10">
-      <div className="flex items-center justify-start gap-6 text-sm md:text-base font-semibold text-gray-800 flex-wrap">
+      <div className="flex items-center justify-start gap-6 text-sm md:text-base font-semibold text-gray-800 flex-nowrap overflow-auto sm:gap-5 text-xs">
         
         {/* Hamburger + Label */}
         <div className="flex items-center gap-1 cursor-pointer hover:text-black transition-colors">
@@ -28,10 +28,11 @@ const Categories = () => {
 
         {/* Render category names */}
         {categories.map((item, index) => (
-          <span key={index} className="hover:text-black cursor-pointer">
+          <span key={index} className="hover:text-black cursor-pointer ">
             {item}
           </span>
         ))}
+        
       </div>
     </div>
   );

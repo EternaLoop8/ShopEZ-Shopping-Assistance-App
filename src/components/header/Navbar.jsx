@@ -1,6 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar= () => {
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate('/login');
+  };
   return (
     <nav className='w-full bg-white shadow flex items-center justify-between px-0 py-0 ps-1 h-15'>
       <div className="flex justify-center items-center gap-4 px-6 py-">
@@ -18,7 +24,7 @@ const Navbar= () => {
       <div className='relative w-full max-w-md md:w-10 lg:w-900'>
         <input 
         type="text"
-        placeholder='Search fo Products'
+        placeholder='Search for Products...'
         className='w-full border border-gray-300 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400'
          />
 
@@ -35,8 +41,8 @@ const Navbar= () => {
       </div>
 
       <div className='flex gap-4 cursor-pointer absolute right-4 justify-center items-center'>
-        <button className='flex cursor-pointer rounded-full border-1 px-1 py-2 h-8 w-20 justify-center items-center gap-1'>
-          <span className=''>Login</span>
+        <button onClick={handleLoginClick} className='flex cursor-pointer rounded-full border-1 px-1 py-2 h-8 w-20 justify-center items-center gap-1 '>
+          <span className=''>Login</span> 
 
           <svg xmlns="http://www.w3.org/2000/svg" 
           fill="none" 
@@ -54,7 +60,8 @@ const Navbar= () => {
         fill="none" 
         viewBox="0 0 24 24" 
         strokeWidth={1.5} 
-        stroke="currentColor" 
+        stroke="currentColor"
+        onClick={() => navigate("/Wishlist")} 
         className="size-6">
        <path strokeLinecap="round" 
         strokeLinejoin="round" 
@@ -66,7 +73,8 @@ const Navbar= () => {
         fill="none" 
         viewBox="0 0 24 24" 
         strokeWidth={1.5} 
-        stroke="currentColor" 
+        stroke="currentColor"
+        onClick={() => navigate("/Cart")}  
         className="size-6">
        <path strokeLinecap="round" 
         strokeLinejoin="round" 

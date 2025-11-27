@@ -110,6 +110,84 @@ export default function HomePage() {
         },
       ],
     },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
+    {
+      title: "Under ₹499 | Deals on home improvement",
+      linkText: "Explore all",
+      products: [
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/cleaning.jpg",
+          label: "Cleaning supplies",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/shower.jpg",
+          label: "Bathroom accessories",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/tools.jpg",
+          label: "Home tools",
+        },
+        {
+          image:
+            "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/HomeImprovement/CatCards/wallpaper.jpg",
+          label: "Wallpapers",
+        },
+      ],
+    },
   ];
 
   return (
