@@ -61,7 +61,7 @@ const Navbar= () => {
         viewBox="0 0 24 24" 
         strokeWidth={1.5} 
         stroke="currentColor"
-        onClick={() => navigate("/Wishlist")} 
+        onClick={() => navigate("/wishlist")} 
         className="size-6">
        <path strokeLinecap="round" 
         strokeLinejoin="round" 
@@ -74,7 +74,7 @@ const Navbar= () => {
         viewBox="0 0 24 24" 
         strokeWidth={1.5} 
         stroke="currentColor"
-        onClick={() => navigate("/Cart")}  
+        onClick={() => navigate("/cart")}  
         className="size-6">
        <path strokeLinecap="round" 
         strokeLinejoin="round" 
